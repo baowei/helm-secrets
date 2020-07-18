@@ -4,8 +4,3 @@ RUN apk add --update --no-cache git && \
     rm -f /var/cache/apk/*
     
 RUN helm plugin install https://github.com/futuresimple/helm-secrets
-
-WORKDIR /apps
-
-ENTRYPOINT ["helm"]
-CMD ["--help"]
