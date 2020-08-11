@@ -19,8 +19,6 @@ RUN apk add --update --no-cache curl ca-certificates git bash py3-pip && \
 
 RUN helm plugin install https://github.com/zendesk/helm-secrets
 
-RUN apk del curl git
-
 WORKDIR /apps
 
 ENTRYPOINT ["helm"]
