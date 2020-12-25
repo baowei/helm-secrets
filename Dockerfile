@@ -3,7 +3,7 @@ FROM alpine:3
 # variable "VERSION" must be passed as docker environment variables during the image build
 # docker build --no-cache --build-arg VERSION=3.2.4 -t cyberbtc/helm-secrets:3.2.4 .
 
-ARG VERSION=3.2.4
+ARG VERSION=3.4.2
 
 # ENV BASE_URL="https://storage.googleapis.com/kubernetes-helm"
 ENV BASE_URL="https://get.helm.sh"
