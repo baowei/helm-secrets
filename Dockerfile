@@ -18,6 +18,8 @@ RUN apk add --update --no-cache curl ca-certificates git bash py3-pip && \
     rm -f /var/cache/apk/*
 
 RUN helm plugin install https://github.com/zendesk/helm-secrets
+RUN helm plugin install https://github.com/chartmuseum/helm-push.git
+
 
 RUN curl -L https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.8/2020-09-18/bin/linux/amd64/kubectl -o /usr/bin/kubectl \
     && chmod +x /usr/bin/kubectl
